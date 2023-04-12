@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Early Chronic Disease Detection Prediction</title>
+</head>
+<body bgcolor='MediumSeaGreen' text='white'>
+<h1 style ="color: white;">Early Chronic Disease Detection Prediction
+<b>
+<i>
+<font size=15>
+</font>
+</i>
+</b>
+</h1>
+<div style="background-color:white">
+<hr>
+<hr></div>
+<h2> Enter the details to check whether You have Kidney disease or not!</h2>
+<h4>
+
+<form action="{{url_for('predict')}}" method="post">
+
+
+	<p> Red Blood Cell : <input type='text' name='red_blood_cell' placeholder='Enter 0 for abnormal 1 for normal' Enter Numerical part required='required' />
+    <p> Pus Cell : <input type='text' name='pus_cell' placeholder='Enter 0 for abnormal 1 for normal'  required='required' />
+    <p>Blood Glucose Random : <input type='text' name='blood_glucose_random' placeholder='mg/dl' required='required'/></p>
+    <p> Blood Urea : <input type='text' name='blood_urea' placeholder='mg/dl' required='required' /></p>
+    <p> Anemia : <input type='text' name='anemia' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+    <p>Diabettesmellitus : <input type='text' name='diabettesmellitus' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+    <p> Coronary Artery Disease : <input type='text' name='coronary_artery_disease' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+    <p> Pedal Edema : <input type='text' name='pedal_edema' placeholder='Enter 0 for no 1 for yes' required='required' /></p>
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+</h4>
+<h2>
+<b>
+{{ prediction_text }}
+</b>
+</h2>
+</body>
+</html>
