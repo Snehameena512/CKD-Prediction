@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chronic kidney Disease Prediction</title>
+    <link rel="stylesheet" href="stylep.css">
+    <style type="text/css">
+       .back-img{
+       background-image: url(b4.jpg);
+       width :99%;
+       height:615px;
+       background-size: cover;
+       position: absolute;
+       }
+       .text{
+       text-align: center;
+       font-size:20px;
+       color : white;
+       font-weight:bold;
+       margin-top:15px;
+       }
+       .container .inner{
+        position: absolute;
+        width: 100%;
+        background-color:transparent ;
+        transform: translate(-50%, -50%);
+        top: 5%;
+        Left: 50%;
+        border-bottom: 4px ;
+        border-top: 4px ;
+        }
+    </style>
+</head>
+<body>
+<div class="back-img" >
+
+    <div class="container">
+        <div class="inner">
+            <div class="text">
+            <h1>Chronic kidney Disease Prediction</h1>
+            </div>
+        </div>
+<div class="menu">
+<ul>
+<li><a href="home1.html">HOME</a></li>
+<li><a href="#">PREDICT</a></li>
+</ul>
+</div>
+<form action="result.html" method="post">
+        <label for="blood_glucose_random">Blood Glucose Random:</label>
+        <input type="number" id="blood_glucose_random" name="blood_glucose_random" placeholder="Enter blood_glucose_random in mg/dl" Enter Numerical part required='required'>
+        <label for="blood_urea">Blood Urea:</label>
+        <input type="number" id='blood_urea' name='blood_urea' placeholder="Enter 'blood_urea' in mg/dl" Enter Numerical part required='required'>
+
+  <label for="red_blood_cell">Red Blood Cell:</label>
+  <select id="red_blood_cell" name="red_blood_cell" placeholder='Enter 0 for abnormal 1 for normal' Enter Numerical part required='required'>
+   <option value="1">Normal</option>
+   <option value="0">Abnormal</option>
+  </select>
+
+  <label for="pus_cell">Pus Cell:</label>
+  <select id="pus_cell" name="pus_cells">
+   <option value="1">Normal</option>
+   <option value="0">Abnormal</option>
+  </select>
+
+  <label for="anemia">Anemia:</label>
+  <select id="anemia" name="anemia">
+   <option value="1">yes</option>
+   <option value="0">No</option>
+  </select>
+            <label for="diabettesmellitus">Diabettesmellitus:</label>
+  <select id="diabettesmellitus" name="diabettesmellitus">
+   <option value="1">yes</option>
+   <option value="0">No</option>
+  </select>
+
+    <label for="coronary_artery_disease">Coronary Artery Disease:</label>
+  <select id="coronary_artery_disease" name="coronary_artery_disease">
+   <option value="1">yes</option>
+   <option value="0">No</option>
+  </select>
+
+      <label for="pedal_edema">Pedal Edema:</label>
+  <select id="pedal_edema" name="pedal_edema">
+   <option value="1">yes</option>
+   <option value="0">No</option>
+  </select>
+       <input type="submit" value="Predict ">
+</form>
+</body>
+</html>
